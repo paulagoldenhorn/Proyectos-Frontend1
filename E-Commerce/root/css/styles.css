@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import url("https://use.fontawesome.com/releases/v6.1.0/css/all.css");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 10% 1fr 10% 10%;
+  place-items: center start;
+  margin: 1.5rem;
+}
+header img:last-child {
+  width: 25px;
+  height: 25px;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 40% 1fr;
+}
+main section .imagen {
+  background-image: url("../img/image-product-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 300px;
+  width: 100vw;
+}
+main section h6 {
+  color: hsl(26deg, 100%, 55%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+main section .precios span:nth-child(2) {
+  color: hsl(26deg, 100%, 55%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: hsl(25deg, 100%, 94%);
+  border-radius: 5px;
+  padding: 5px;
+}
+main section div span:nth-child(3) {
+  color: hsl(220deg, 14%, 75%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  justify-self: end;
+  text-decoration: line-through;
+}
+main section h2, main section div span:first-child, main section .cantidad :first-child, main section .cantidad :last-child {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+main section .main_info_p {
+  color: hsl(219deg, 9%, 45%);
+  font-size: 1.6rem;
+}
+main section .precios {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 2fr 1fr;
+  place-items: center start;
+}
+main section .botones {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-self: center;
+}
+main section .cantidad {
+  align-self: center;
+  background-color: hsl(223deg, 64%, 98%);
+  border-radius: 5px;
+  justify-self: center;
+  padding: 15px 100px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 40% 1fr 40%;
+  padding: 15px;
+  width: 280px;
+}
+main section .cantidad p {
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  justify-self: center;
+}
+main section .cantidad :first-child {
+  align-self: center;
+  color: hsl(26deg, 100%, 55%);
+  justify-self: start;
+}
+main section .cantidad :last-child {
+  align-self: center;
+  color: hsl(26deg, 100%, 55%);
+  justify-self: end;
+}
+main section #cart {
+  align-self: center;
+  background-color: hsl(223deg, 64%, 98%);
+  border-radius: 5px;
+  justify-self: center;
+  padding: 15px 100px;
+  color: hsl(0deg, 0%, 0%);
+  font-size: 1.3rem;
+  font-weight: 700;
+  background-color: hsl(26deg, 100%, 55%);
+  color: hsl(0deg, 0%, 100%);
+  display: flex;
+  gap: 10px;
+  place-self: center center;
+}
+main section #cart::before {
+  content: "\f07a";
+  font-family: "Font Awesome 5 Free";
+}
+main section #cart:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+main .info {
+  display: grid;
+  gap: 15px;
+  margin-bottom: 50px;
+  padding: 1rem 2rem;
+  place-items: center start;
+}
+
+footer {
+  margin: 1rem;
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+@media screen and (max-width: 700px) {
+  .hide {
+    display: none;
+  }
+}
+@media screen and (min-width: 700px) {
+  .hideM {
+    display: none;
+  }
+
+  .show {
+    display: inline-block;
+  }
+
+  hr {
+    color: hsl(223deg, 64%, 98%);
+    margin: 0rem 12.5rem;
+  }
+
+  header {
+    gap: 5px;
+    grid-template-columns: 20% 10% 5% 8% 8% 8% 1fr 10%;
+    justify-items: center;
+    margin: 4rem 6rem;
+  }
+  header p {
+    color: hsl(219deg, 9%, 45%);
+    font-size: 1.6rem;
+  }
+  header p:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s;
+  }
+  header img:last-child {
+    height: 50px;
+    width: 50px;
+  }
+  header img:nth-child(8) {
+    justify-self: end;
+  }
+
+  main {
+    grid-template-columns: 50% 50%;
+    margin: 8rem 15rem;
+  }
+  main .section1 {
+    display: grid;
+    grid-template-rows: 1fr 20%;
+  }
+  main .section1 img {
+    border-radius: 15px;
+    justify-self: center;
+    width: 400px;
+  }
+  main .section1 div {
+    justify-self: center;
+  }
+  main .section1 div img {
+    border-radius: 15px;
+    row-gap: 10px;
+    width: 80px;
+  }
+  main .section1 div img:hover {
+    border: solid 3px hsl(26deg, 100%, 55%);
+    cursor: pointer;
+    opacity: 50%;
+  }
+  main .info h2 {
+    font-size: 4rem;
+  }
+  main .info .main_info_p {
+    padding: 2rem 5rem 2rem 0rem;
+  }
+  main .info .precios {
+    grid-template-columns: 1fr 1fr;
+  }
+  main .info div span:nth-child(3) {
+    justify-self: start;
+  }
+  main .botones {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: none;
+  }
+  main .botones .cantidad {
+    padding: 10px;
+    width: 150px;
+  }
+  main .botones #cart {
+    padding: 15px 70px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

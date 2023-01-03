@@ -1,0 +1,248 @@
+@import url(https://use.fontawesome.com/releases/v6.1.0/css/all.css);
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: #222222;
+  display: grid;
+  grid-template-columns: 1fr 20%;
+  padding: 2rem 2.5rem;
+}
+header img {
+  align-self: center;
+}
+header :last-child {
+  justify-self: end;
+}
+
+main {
+  background-color: #F3F3F3;
+}
+main .first_section {
+  align-items: center;
+  background-image: url(../img/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 500px;
+  justify-content: center;
+}
+main .first_section div {
+  display: grid;
+  gap: 30px;
+  grid-template-rows: 1fr auto;
+  text-align: center;
+}
+main .first_section div h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  place-self: center center;
+}
+main .first_section div h1 span {
+  color: #D01418;
+}
+main .first_section div button {
+  background-color: #D01418;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  justify-self: center;
+  padding: 1rem 0rem;
+  width: 160px;
+}
+main .second_section {
+  margin: 2rem;
+}
+main .second_section h2 {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+main .second_section .productos {
+  display: grid;
+  gap: 20px;
+  grid-template-rows: repeat(3, 1fr);
+  margin: 2rem 0rem;
+  place-items: center center;
+}
+main .second_section .productos article {
+  background-color: white;
+  border-radius: 5px;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+main .second_section .productos article div {
+  padding: 3rem 5rem;
+}
+main .second_section .productos article div img {
+  justify-self: center;
+  width: 130px;
+}
+main .second_section .productos article hr {
+  color: #F3F3F3;
+}
+main .second_section .productos article span {
+  padding: 2rem;
+}
+main .second_section .productos article span :nth-child(1) {
+  font-size: 2rem;
+}
+main .second_section .productos article span :nth-child(3) {
+  color: #619D00;
+}
+main .third_section {
+  margin: 5rem 0rem 0rem 0rem;
+}
+main .third_section h2 {
+  color: black;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+main .third_section .div_container {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  justify-items: center;
+  margin: 2rem 0rem 0rem 0rem;
+}
+main .third_section .div_container div {
+  display: grid;
+  grid-template-rows: repeat(3, 29%);
+}
+main .third_section .div_container div img {
+  border-radius: 5px;
+  width: 250px;
+}
+main .third_section .div_container div p {
+  color: white;
+  font-size: 1.5rem;
+  margin: 0rem 3rem 0rem 0rem;
+  place-self: center end;
+}
+
+footer div {
+  background-color: #222222;
+  display: grid;
+  gap: 20px;
+  grid-template-rows: repeat(3, 1fr);
+  padding: 2rem 5rem;
+  place-items: center center;
+}
+footer div img {
+  width: 150px;
+}
+footer div h2 {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+footer div span {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+footer div span :nth-child(1) {
+  color: #14AED0;
+}
+footer div span :nth-child(2) {
+  color: #1476D0;
+}
+footer div span :nth-child(3) {
+  color: #CE0CFF;
+}
+footer p {
+  background-color: #F3F3F3;
+  padding: 0.7rem;
+  text-align: center;
+}
+
+@media screen and (max-width: 700px) {
+  .hideM {
+    display: none;
+  }
+}
+@media screen and (min-width: 700px) {
+  .hideD {
+    display: none;
+  }
+
+  header {
+    grid-template-columns: 1fr repeat(5, auto);
+    align-items: center;
+    gap: 20px;
+  }
+  header p {
+    color: white;
+    justify-self: end;
+    font-size: 1.6rem;
+  }
+  header img:nth-of-type(even) {
+    justify-self: center;
+  }
+
+  main .first_section {
+    background-image: url(../img/bannerD.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  main .second_section {
+    margin: 3rem;
+  }
+  main .second_section .productos {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    gap: 10px;
+  }
+  main .third_section {
+    margin: 8rem 0rem 0rem 0rem;
+  }
+  main .third_section .div_container {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    padding: 0rem 0rem 5rem 0rem;
+  }
+  main .third_section .div_container div img {
+    width: 300px;
+  }
+  main .third_section .div_container div p {
+    font-size: 2rem;
+  }
+
+  footer div {
+    gap: 0px;
+    grid-template-columns: repeat(2, 50% 50%);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 5rem 8rem;
+  }
+  footer div img {
+    grid-row: 2/2;
+    justify-self: start;
+  }
+  footer div h2 {
+    grid-column: 2/2;
+    grid-row: 1/1;
+    justify-self: end;
+  }
+  footer div span {
+    grid-column: 2/2;
+    grid-row: 3/3;
+    justify-self: end;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

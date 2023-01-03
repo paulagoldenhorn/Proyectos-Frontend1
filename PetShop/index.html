@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Clase 13</title>
+</head>
+
+<body>
+    <header>
+        <div class="thin">
+            <p id="mrg_oferta">Grandes ofertas en comederos</p>
+            <div class="ddmenu">
+                <p class="p-menu">Español<i class="fa-solid fa-chevron-down"></i></p>
+                <p class="p-menu">ARG$<i class="fa-solid fa-chevron-down"></i></p>
+            </div>
+        </div>
+
+        <div class="header">
+            <div class="img_header"><img src="img/Logo.png" alt="Logo Cat&Dog"></div>
+
+            <nav>
+                <p class="p-nav"><i class="fa-solid fa-paw"></i>Categorías</p>
+                <p class="p-nav"><i class="fa-solid fa-paw"></i>Pets</p>
+                <p class="p-nav"><i class="fa-solid fa-paw"></i>Nosotros</p>
+                <p class="p-nav"><i class="fa-solid fa-paw"></i>Contactanos</p>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="banner">
+                <img src="img/bowl-and-pet-daities-on-green-background 1.png" alt="Banner bowl alimento canino">
+                <div class="txt_banner">
+                    <h3 class="mrg_bnn_txt">¡Es un placer tenerte aquí!</h3>
+                    <p class="mrg_bnn_txt">¡Comederos en descuento!</p>
+                    <p class="comederos">COMEDEROS</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="main_title">
+                <img src="img/pawprint 1.png" alt="Huella de perro">
+                <h1 class="mrg_title">Productos Destacados</h1>
+                <p class="mrg_title">Comederos - Accesorios - Comida</p>
+            </div>
+
+            <div class="posts">
+                <article>
+                    <img src="img/churrasquito.png" alt="Juguete de churrasquito">
+                    <p>Jueguete Churrasquito</p>
+                    <p class="precios">$150</p>
+                </article>
+
+                <article>
+                    <img src="img/comedero.png" alt="Comedero para perro">
+                    <p>Comedero para perro</p>
+                    <p class="precios">$250</p>
+                </article>
+            
+                <article>
+                    <img src="img/Huesito.png" alt="Juguete Huesito">
+                    <p>Jueguete Huesito</p>
+                    <p class="precios">$650</p>
+                </article>
+            </div>
+
+            <form action="#" class="form" method="get">
+                    <h4>Contáctanos</h4>
+                    <fieldset>
+                        <legend>Datos Personales</legend>
+                        <label for="nyp">
+                            <input class="input" type="text" name="nombre_y_apellido" id="nyp" placeholder="Nombre y Apellido" maxlength="50" required>
+                        </label>
+                        <br>
+                        <label for="email">
+                            <input class="input" type="email" name="email" id="email" placeholder="Ingresá tu correo electrónico" minlength="6" maxlength="50" required>
+                        </label>
+                        <br>
+                        <label for="contrasenia">
+                            <input class="input" type="password" name="pass" id="contrasenia" placeholder="Ingresá tu contraseña" maxlength="20" required>
+                        </label>
+                        <br>
+                        <label for="tel">
+                            <input class="input" type="tel" name="telefono" id="tel" placeholder="Teléfono" minlength="8" maxlength="14" required>
+                        </label>
+                    </fieldset>
+                    
+                    <br>
+                    <fieldset>
+                        <legend>Consultas</legend>
+                        <label for="date">
+                            <p>Fecha de su consulta</p>
+                            <input class="input" type="date" name="date" id="date" value="2022-04-04" max="2030-01-01" min="2020-01-01" required>
+                        </label>
+                        <br>
+                        <label for="consultas">
+                            <select name="consultas" id="consultas" required>
+                                <option value="">Seleccione el motivo de consulta</option>
+                                <option value="error">Error de compra</option>
+                                <option value="tecnico">Hablar con un técnico</option>
+                                <option value="sugerencia">Sugerencia</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </label>
+                        <br>
+                        <label for="textarea_consultas"><p>Contanos un poco más</p></label>
+                        <textarea name="textarea_consultas" id="textarea_consultas" cols="30" rows="10" maxlength="500" required></textarea>
+                    </fieldset>
+                    
+                    <br>
+                    <fieldset>
+                        <legend>Valóranos</legend>
+                        <label for="v1">
+                                <input class="valor" id="v1" name="valoracion" type="radio" value="1" required><i class="fa-solid fa-star"></i>
+                        </label>
+
+                        <label for="v2">
+                                <input class="valor" id="v2" name="valoracion" type="radio" value="2" required><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </label>
+
+                        <label for="v3">
+                                <input class="valor" id="v3" name="valoracion" type="radio" value="3" required><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </label>
+                    </fieldset>
+
+                    <div class="botones">
+                        <button type="reset">Resetear</button>
+                        <button type="submit" id="enviar">Enviar</button>
+                    </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="barra_sub">
+            <p id="novedades"><i class="fa-regular fa-envelope fa-xl"></i>Suscríbete para más novedades</p>
+            
+            <div class="sub">
+                <p id="txt_sub">Ingresá tu correo electronico</p>
+                <p id="boton_sub">Suscribirme</p>
+            </div>
+        </div>
+
+        <div class="footer">
+                <div class="img_footer">
+                    <img class="mrg_logos" src="img/localidad.png" alt="Icono Localidad">
+                    <img class="mrg_logos" src="img/telefono.png" alt="Icono Teléfono">
+                    <img class="mrg_logos" src="img/correo.png" alt="Icono Correo Electrónico">
+                </div>
+
+                <div class="bck_footer">
+                    <div class="mrg_foo_txt">
+                        <h4>Localidad</h4>
+                        <p>Calle - provincia</p>
+                    </div>
+
+                    <div class="mrg_foo_txt">
+                        <h4>Teléfono</h4>
+                        <p>Número de teléfono</p>
+                    </div>
+
+                    <h4>Correo Electrónico</h4>
+                    <p>Dirección de correo</p>
+                </div>
+            
+            <img class="footer_logo" src="img/Logo2.png" alt="Front Cat&Dog">
+        </div>
+        <div class="derechos">
+            <p>Todos los derechos reservados Front End</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,107 @@
+@import "base";
+@import "var";
+@import "mixin";
+@import "header";
+@import "main";
+@import "footer";
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+@import url("https://use.fontawesome.com/releases/v6.1.0/css/all.css");
+
+
+@media screen and (max-width: 700px) {
+    .hide {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .hideM {
+        display: none;
+    }
+    .show {
+    display: inline-block;
+    }
+
+    hr {
+        color: $cs-light-greyish-blue;
+        margin: 0rem 12.5rem;
+    }
+
+    header {
+    gap: 5px;
+    grid-template-columns: 20% 10% 5% 8% 8% 8% 1fr 10%;
+    justify-items: center;
+    margin: 4rem 6rem;
+        p {
+        color: $cs-dark-grayish-blue;
+        font-size: 1.6rem;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            transition:0.2s;
+        }
+        }
+        img:last-child {
+            height: 50px;
+            width: 50px;
+        }
+        img:nth-child(8){
+            justify-self: end;
+        }
+    }
+
+    main {
+        grid-template-columns: 50% 50%;
+        margin: 8rem 15rem;
+        .section1 {
+            display: grid;
+            grid-template-rows: 1fr 20%;
+            img {
+            border-radius: 15px;
+            justify-self: center;
+            width: 400px;
+            }
+            div {
+                justify-self: center;
+                img {
+                    border-radius: 15px;
+                    row-gap: 10px;
+                    width: 80px;
+                    &:hover {
+                        border: solid 3px $cp-orange;
+                        cursor: pointer;
+                        opacity: 50%;
+                    }
+                }
+            }
+        }
+        .info {
+            h2 {
+                font-size: 4rem;
+            }
+            .main_info_p {
+                padding: 2rem 5rem 2rem 0rem;
+            }
+            .precios {
+                grid-template-columns: 1fr 1fr;
+            }
+            div span:nth-child(3) {
+                justify-self: start;
+            }
+        }
+        .botones {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: none;
+            .cantidad {
+                padding: 10px;
+                width: 150px;
+            }
+            #cart {
+                padding: 15px 70px;
+            }
+        }
+    }
+}

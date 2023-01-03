@@ -1,0 +1,348 @@
+@import url("https://use.fontawesome.com/releases/v6.1.0/css/all.css");
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@400;500;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --color-primario:rgb(35, 44, 81);
+    --color-secundario: rgb(242, 95, 58);
+    --color-neutro-1: rgb(143, 148, 167);
+    --color-neutro-2: rgb(29, 30, 37);
+    --color-neutro-3: rgb(248, 121, 90);
+    --color-neutro-4: rgb(249, 249, 249);
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Be Vietnam', sans-serif;
+    color: var(--color-primario);
+}
+
+section {
+    margin: 100px 10%;
+}
+
+/* Reglas header */
+.small_font {
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.header_position {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin: 5rem;
+}
+
+.nav_a_pseudo {
+    display: flex;
+    flex-direction: row;
+}
+.nav_a_pseudo a:link {
+    color: var(--color-primario);
+    font-size: 1.3rem;
+    margin: 1rem;
+    text-decoration: none;
+}
+.nav_a_pseudo li:hover {
+    color: var(--color-neutro-1);
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.nav_a_pseudo a:hover {
+    color: var(--color-secundario);
+}
+
+.header_button {
+    background-color: var(--color-secundario);
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-size: 1.3rem;
+    padding: 1.2rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    width: 85px;
+}
+.header_button:hover {
+    background-color: var(--color-neutro-3);
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+
+header img:last-of-type {
+    display: none;
+}
+
+/* Reglas main */
+/* ----- Section Banner ----- */
+.bigw_font {
+    font-size: 4rem;
+    font-weight: 700;
+}
+.bigw_font h1 {
+    font-size: 5.5rem;
+}
+
+.main_p_color {
+    color: #000000;
+}
+
+.section_position {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.article_width {
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.article_img_position {
+    animation: graficos 1s ease infinite normal;
+    animation-direction: alternate;
+    max-width: 100%;
+}
+
+/* ----- Section Sobre Nosotros ----- */
+.bigw_font h2 {
+    font-size: 3.6rem;
+}
+
+.article_position_align {
+    align-self: flex-start;
+}
+
+.article_direction {
+    flex-direction: row;
+}
+.article_direction div {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.article_direction span {
+    background-color: var(--color-secundario);
+    border-radius: 50px;
+    color: white;
+    font-weight: 700;
+    margin-right: 2rem;
+    padding: 1rem 2.5rem; 
+}
+.article_direction p {
+    color: var(--color-neutro-1);
+    margin: 0rem 5rem 0rem 9.5rem;
+}
+
+/* ----- Section Testimonios ----- */
+.small_font h4 {
+    font-weight: 700;
+}
+
+.section_test_position {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    justify-content: center;
+    margin: 8rem 0rem 8rem;
+}
+.section_test_position .section_position {
+    text-align: center;
+}
+
+.article_box {
+    background-color: var(--color-neutro-4);
+    margin: 0rem 4rem 0rem 4rem;
+    padding: 0.2rem;
+    position: relative;
+}
+.article_box h4 {
+    bottom: 20px;
+    position: relative;
+}
+.article_box p {
+    bottom: 15px;
+    color: var(--color-neutro-1);
+    padding: 0rem 1rem;
+    position: relative;
+}
+
+.article_img {
+    max-width: 70px;
+    position: relative;
+    bottom: 35px;
+}
+
+/* Reglas footer */
+/* ----- Section Últimas palabras ----- */
+.footer_position h2 {
+    color: #FFFFFF;
+}
+#footer_button {
+    background-color: #FFFFFF;
+    color: var(--color-secundario);
+}
+
+.footer_position {
+    align-items: center;
+    background-color: var(--color-secundario);
+    display: flex;
+    height: 20.0rem;
+    justify-content: space-around;
+}
+
+/* ----- Section Informacióm footer ----- */
+.footer_info_position {
+    background-color: var(--color-neutro-2);
+    gap: 30px;
+    padding: 2.5rem;
+}
+
+.footer_div_position {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+}
+.footer_div_position i {
+    margin: 0.5rem;
+}
+
+.footer_centerdiv_position {
+    flex-direction: row;
+}
+.footer_centerdiv_position ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_a_pseudo a:link {
+    color: #FFFFFF;
+}
+.footer_a_pseudo a:visited {
+    color: var(--color-neutro-4);
+}
+.footer_a_pseudo a:hover {
+    color: var(--color-secundario);
+}
+
+.form input {
+    border-radius: 20px;
+    margin: 1rem;
+    padding: 1.2rem 1rem;
+    width: 150px;
+}
+::placeholder {
+    font-size: 1.3rem;
+    text-align: left;
+    font-family: 'Be Vietnam', sans-serif;
+}
+.form button {
+    padding: 1.2rem 1rem;
+    text-align: center;
+    width: 50px;
+}
+.form button:hover {
+    cursor: pointer;
+    transform: rotate(1turn);
+    transition: 0.8s;
+}
+
+.footer_div_position p {
+    align-self: flex-end;
+    color: var(--color-neutro-1);
+    text-align: right;
+}
+
+.footer_hide {
+    display: none;
+}
+
+/* Animaciones */
+@keyframes graficos {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Media queries */
+@media screen and (max-width: 600px){
+    header {
+        align-items: center;
+        display: flex;
+    }
+    nav, header a {
+        display: none;
+    }
+    section {
+        margin: 100px 5%;
+    }
+    header img:last-of-type {
+        display: inline-block;
+    }
+
+    .hide {
+        display: none;
+    }
+    .bigw_font h1 {
+        font-size: 4rem;
+    }
+    .media_box1_direction, .footer_position {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .media_box2_direction {
+        flex-direction: column;
+    }
+    .article_position_align {
+        margin-bottom: 5rem;
+    }
+    .article_width {
+        width:auto;
+    }
+    .article_width h2, .section_test_position h3 {
+        font-size: 3rem;
+    }
+    .article_width p, h2 {
+        text-align: center;
+    }
+    .article_width p {
+        margin: 0px;
+    }
+    .article_direction span {
+        margin-right: 1rem;
+        padding: 0.5rem 2rem; 
+    }
+    .article_direction div {
+        gap: 20px;
+    }
+    .resaltado {
+        background-color: rgb(255, 234, 224);
+        height: 30px;
+    }
+
+    .footer_position {
+        gap: 30px;
+        height: 40.0rem;
+        justify-content: center;
+    }
+    .footer_a_pseudo a {
+        font-size: 1.5rem;
+    } 
+    .footer_hide {
+        display: inline-block;
+    }
+}

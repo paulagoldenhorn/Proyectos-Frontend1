@@ -1,0 +1,97 @@
+main {
+    display: grid;
+    grid-template-rows: 40% 1fr;
+    section {
+        .imagen { 
+        background-image: url("../img/image-product-1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 300px;
+        width: 100vw;
+        }
+        h6 {
+            @include texto ($cp-orange);
+            text-transform: uppercase;
+        }
+        .precios span:nth-child(2) {
+            @include texto ($cp-orange);
+            background-color: $cp-pale-orange;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        div span:nth-child(3) {
+            @include texto ($cs-grayish-blue);
+            justify-self: end;
+            text-decoration:line-through;
+        }
+        h2, div span:first-child, .cantidad :first-child, .cantidad :last-child {
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        .main_info_p {
+            color: $cs-dark-grayish-blue;
+            font-size: 1.6rem;
+        }
+        .precios {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: 1fr 2fr 1fr;
+            place-items: center start;
+        }
+        .botones {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            justify-self: center;
+        }
+        .cantidad {
+            @include botones ($cs-light-greyish-blue);
+            align-items: center;
+            display: grid;
+            grid-template-columns: 40% 1fr 40%;
+            padding: 15px;
+            width: 280px;
+            p {
+            color: $cs-black;
+            font-size: 1.3rem;
+            font-weight: 700;
+            justify-self: center;
+            }
+        }
+        .cantidad :first-child {
+            align-self: center;
+            color: $cp-orange;
+            justify-self: start;
+        }
+        .cantidad :last-child {
+            align-self: center;
+            color: $cp-orange;
+            justify-self: end;
+        }
+
+        #cart {
+            @include botones ($cs-light-greyish-blue);
+            @include texto ($cs-black);
+            background-color: $cp-orange;
+            color: $cs-white;
+            display: flex;
+            gap: 10px;
+            place-self: center center;
+        }
+        #cart::before {
+            content: "\f07a";
+            font-family: "Font Awesome 5 Free";
+        }
+        #cart:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            transition:0.2s;
+        }
+    }
+    .info {
+        display: grid;
+        gap: 15px;
+        margin-bottom: 50px;
+        padding: 1rem 2rem;
+        place-items: center start;
+    }
+}
